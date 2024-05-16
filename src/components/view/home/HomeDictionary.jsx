@@ -20,7 +20,7 @@ const HomeDictionary = () => {
         </div>
         <div className="card">
           <h3 className='font-bold text-sm whitespace-nowrap'>Others</h3>
-          <p className='text-xs mt-1'>Terms that don't fit into other categories but are still relevant</p>
+          <p className='text-xs mt-1'>{`Terms that don't fit into other categories but are still relevant`}</p>
         </div>
       </div>
     </div>
