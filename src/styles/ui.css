@@ -18,4 +18,20 @@
     .transition-base {
         @apply transition-all duration-300 ease-in-out
     }
+
+    .badge {
+        @apply flex gap-2 whitespace-nowrap items-center p-1 px-2 text-xs border border-stroke rounded-md bg-container text-text
+    }
+
+    .btn {
+        @apply px-5 py-3 leading-4 rounded-md shadow-sm border flex gap-2 border-stroke items-center font-normal w-fit transition-base
+    }
+
+    .btn-sm {
+        @apply !px-2 !py-1 text-sm
+    }
+
+    .hr {
+        @apply border-stroke my-5;
+    }
 }

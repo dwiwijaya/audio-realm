@@ -2,13 +2,12 @@ import React from "react";
 
   const PageHeading = ({ title, description }) => {
     return (
-      <>
-        <h2 className="ml-3 relative font-bold text-3xl text-text dots">{title}</h2>
-        <p className="leading-5 text-subtext">
+      <div className="mt-6">
+        <h2 className="relative font-bold text-xl text-text dots">{title}</h2>
+        <p className="leading-5 mb-4 text-subtext text-sm">
           {description}
         </p>
-        <hr className="hr" />
-      </>
+      </div>
     );
   };
   
