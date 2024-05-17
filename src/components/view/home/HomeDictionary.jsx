@@ -4,7 +4,7 @@ import React from 'react'
 const HomeDictionary = () => {
   return (
     <div className=''>
-      <PageHeading title="Explore Audiophile Glossary" description="Unlock the World of Audio Jargon with Our Comprehensive Dictionary" />
+      <PageHeading icon="bx bx-book" title="Explore Audiophile Glossary" description="Unlock the World of Audio Jargon with Our Comprehensive Dictionary" />
       <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
         <div className="card">
           <h3 className='font-bold text-sm whitespace-nowrap underline'>Sound Quality</h3>

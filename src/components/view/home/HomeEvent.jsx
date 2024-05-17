@@ -8,7 +8,7 @@ const HomeEvent = () => {
         <i className="bx bx-calendar"></i> Upcoming Audiophile Events <span className="badge bg-secondary">4</span>
       </h1>
       <p className='text-sm mt-1'>Stay Tuned for Exciting Gatherings, Workshops, and Exhibitions in the Audiophile Community</p>
-      <Link className='btn bg-secondary btn-sm flex items-center mt-3 mb-1' href='/'>
+      <Link className='btn bg-secondary flex items-center mt-3 mb-1' href='/'>
         See Event Detail <i className="bx bx-right-arrow-alt"></i>
       </Link>
     </div>

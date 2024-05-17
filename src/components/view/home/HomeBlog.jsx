@@ -34,7 +34,7 @@ const HomeBlog = () => {
     ]
     return (
         <div className=''>
-            <PageHeading title="Insights & Stories" description="Dive Into Articles, Reviews, and Musings from Audiophiles and Experts" />
+            <PageHeading icon="bx bx-pencil" title="Insights & Stories" description="Dive Into Articles, Reviews, and Musings from Audiophiles and Experts" />
             <div className='flex gap-2 mb-3 overflow-auto overflow-y-hidden scrollbar-hide'>
                 {data.map((blog,index) => (
                     <Blog key={index} {...blog}/>
