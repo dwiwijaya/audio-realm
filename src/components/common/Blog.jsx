@@ -15,7 +15,7 @@ const Blog = ({
     excerpt,
     content,
     total_views_count,
-    tags_list,
+    review_mode,
     author,
     isExcerpt = true,
 }) => {
@@ -27,7 +27,7 @@ const Blog = ({
         visible: { opacity: 1, y: 0 },
     };
     const readingTimeMinutes = calculateReadingTime(content) ?? 0;
-
+    // const reviewMode = 
     return (
         <Link href={`/`} >
             <div
@@ -49,6 +49,11 @@ const Blog = ({
                         sizes='100vw, 100vh'
                         className='object-cover object-left w-full h-full transform transition-transform duration-300 group-hover:scale-105 group-hover:blur-sm'
                     />
+                    {
+                        review_mode == 0 ?
+                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-medal"></i>Friendly Review</div> :
+                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-rocket"></i>Advanced Review</div>
+                    }
                     <div className='absolute inset-0 bg-gradient-to-b from-black/20 to-black opacity-90 transition-opacity duration-300'></div>
                 </div>
 

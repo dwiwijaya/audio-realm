@@ -14,20 +14,20 @@ const HomeBlog = () => {
             excerpt: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy`,
             content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy`,
             total_views_count: '0',
-            tags_list: '1',
+            review_mode: '0',
             author: 'Dwi Wijaya',
             isExcerpt: true
         },
         {
             id: '2',
             title: 'Rich Accessories Imersive Gaming Experience, TRN Conch',
-            image_url: 'https://ae01.alicdn.com/kf/S459597d22cfa4ce7ab23f572d7a46033r/Earphone-TRN-Conch-kinerja-tinggi-DLC-berlian-diafragma-dinamis-in-Ear-monitor-dapat-dipertukarkan-diskon-besar.jpg',
+            image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiSDxifbPa5mm1atvNCicFHTh8IjxQXWeohP5KQ4d66Q&s',
             date: 'Fri May 17 2024 10:45:56 GMT+0000 (Coordinated Universal Time)',
             slug: 'aaa',
             excerpt: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy`,
             content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy`,
             total_views_count: '0',
-            tags_list: '1',
+            review_mode: '1',
             author: 'Dwi Wijaya',
             isExcerpt: true
         }
