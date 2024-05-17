@@ -7,6 +7,7 @@ import Navbar from "@/components/layout/Navbar";
 import HomeDictionary from "@/components/view/home/HomeDictionary";
 import HomeBlog from "@/components/view/home/HomeBlog";
 import HomeRecomendation from "@/components/view/home/HomeRecomendation";
+import HomeCommunity from "@/components/view/home/HomeCommunity";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,8 @@ export default function Home() {
       <HomeBlog/>
       <hr className="hr"/>
       <HomeRecomendation/>
+      <hr className="hr"/>
+      <HomeCommunity/>
     </Container>
   );
 }
