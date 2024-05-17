@@ -16,7 +16,6 @@ export default function Home() {
       {/* <ThemeToggle /> */}
       <Navbar/>
       <HomeEvent/>
-      <hr className="hr"/>
       <HomeDictionary/>
       <hr className="hr"/>
       <HomeBlog/>
