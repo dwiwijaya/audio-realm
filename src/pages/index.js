@@ -19,9 +19,9 @@ export default function Home() {
       <HomeEvent/>
       <HomeDictionary/>
       <hr className="hr"/>
-      <HomeBlog/>
-      <hr className="hr"/>
       <HomeRecomendation/>
+      <hr className="hr"/>
+      <HomeBlog/>
       <hr className="hr"/>
       <HomeCommunity/>
     </Container>
