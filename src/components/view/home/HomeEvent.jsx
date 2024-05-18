@@ -9,7 +9,7 @@ const HomeEvent = () => {
       </h1>
       <p className='text-sm mt-1'>Stay Tuned for Exciting Gatherings, Workshops, and Exhibitions in the Audiophile Community</p>
       <Link className='group btn btn-sm bg-secondary flex items-center mt-3 mb-1' href='/'>
-        See Events List <i className="bx bx-right-arrow-alt group-hover:ml-1 transition-base"></i>
+        Browse Events <i className="bx bx-right-arrow-alt group-hover:ml-1 transition-base"></i>
       </Link>
     </div>
   )
