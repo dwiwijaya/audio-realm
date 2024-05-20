@@ -1,14 +1,10 @@
-import Container from '@/components/layout/Container'
-import SigninForm from '@/components/view/auth/SigninForm'
-import WithUnprotected from '@/hoc/withUnprotected'
-import React from 'react'
+import Container from "@/components/layout/Container";
+import SigninForm from "@/components/view/auth/SigninForm";
+import WithUnprotected from "@/hoc/withUnprotected";
+import React from "react";
 
 const signin = () => {
-  return (
-    <Container>
-        <SigninForm/>
-    </Container>
-  )
-}
+  return <SigninForm />;
+};
 
-export default WithUnprotected(signin) 
+export default WithUnprotected(signin);
