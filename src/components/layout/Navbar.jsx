@@ -3,8 +3,12 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import LogoDark from '@/assets/logo/dark.png';
 import LogoLight from '@/assets/logo/light.png';
+import Link from 'next/link';
+import SignoutToggle from '../elements/toggles/SignoutToggle';
+import { useUser } from '@/context/user';
 
 const Navbar = () => {
+    const user = useUser();
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
@@ -32,7 +36,7 @@ const Navbar = () => {
                     <button className='border rounded-md border-stroke p-3 flex items-center justify-center' onClick={toggleTheme}>
                         <i className={`group-active:rotate-90 transition-3s bx bx-${theme == 'dark' ? 'moon' : 'sun'}`} />
                     </button>
-                    <a href="#" className="btn text-title hover:text-gray-300">Login</a>
+                    {!user ? <Link href="auth/signin" className="btn text-title hover:text-gray-300">Login</Link> : <SignoutToggle/>}
                 </div>
             </div>
         </nav>

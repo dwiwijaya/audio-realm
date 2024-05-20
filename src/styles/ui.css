@@ -24,10 +24,23 @@
     }
 
     .btn {
-        @apply px-5 py-3 leading-4 rounded-md shadow-sm border flex gap-2 border-stroke items-center font-normal w-fit transition-base
+        @apply px-5 py-3 leading-4 rounded-md shadow-sm border flex gap-2 border-stroke items-center justify-center font-normal w-fit transition-base text-center
     }
-    .bg-secondary{
-        @apply bg-slate-700 text-slate-200 border-slate-500 dark:bg-slate-200 dark:text-slate-700 
+
+    .bg-secondary {
+        @apply bg-slate-700 text-slate-200 border-slate-500 dark:bg-slate-200 dark:text-slate-700
+    }
+
+    .bg-success {
+        @apply bg-green-700 text-slate-200
+    }
+
+    .bg-primary {
+        @apply bg-blue-700 text-slate-200
+    }
+
+    .bg-warning {
+        @apply bg-yellow-300
     }
 
     .btn-sm {
@@ -36,5 +49,9 @@
 
     .hr {
         @apply border-stroke my-5;
+    }
+
+    .input-form {
+        @apply w-full rounded-md bg-container border-stroke focus:!border-none focus:!outline-none focus:!ring-slate-500 !ring-slate-500
     }
 }

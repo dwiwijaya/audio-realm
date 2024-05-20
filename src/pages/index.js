@@ -8,10 +8,11 @@ import HomeDictionary from "@/components/view/home/HomeDictionary";
 import HomeBlog from "@/components/view/home/HomeBlog";
 import HomeRecomendation from "@/components/view/home/HomeRecomendation";
 import HomeCommunity from "@/components/view/home/HomeCommunity";
+import WithUnprotected from "@/hoc/withUnprotected";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home = () => {
   return (
     <Container>
       {/* <ThemeToggle /> */}
@@ -27,3 +28,4 @@ export default function Home() {
     </Container>
   );
 }
+export default Home
