@@ -9,7 +9,7 @@ import toast from 'react-hot-toast';
 
 const GetStartedForm = () => {
     const user = useUser();
-    const {uid} = user;
+    const { uid } = user;
 
     const router = useRouter();
     const [formStep, setFormStep] = useState(1)
@@ -25,17 +25,10 @@ const GetStartedForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        if (name == 'username') {
-            setFormData({
-                ...formData,
-                username: value.replace(/[^a-zA-Z0-9-_]/g, '').toLowerCase()
-            });
-        } else {
-            setFormData({
-                ...formData,
-                [name]: value,
-            });
-        }
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: name === 'username' ? value.replace(/[^a-zA-Z0-9-_]/g, '').toLowerCase() : value,
+        }));
     };
 
     const handleTypeChange = (value) => {
@@ -65,7 +58,7 @@ const GetStartedForm = () => {
         e.preventDefault();
         try {
             if (formStep == 2) {
-                const { success, error } = await updateDocument('user',uid, formData);
+                const { success, error } = await updateDocument('user', uid, formData);
 
                 if (success) {
                     toast.success(`Account Created successfully`);
@@ -102,6 +95,7 @@ const GetStartedForm = () => {
                                 <div>
                                     <label className='font-bold' htmlFor="">Username</label>
                                     <input className='input-form' name='username' type="text" value={formData.username} onChange={handleChange} required />
+                                    {usernameErr != '' && <p className='mt-1 text-sm text-red-400'>* Username already taken.</p>}
                                 </div>
                                 <div>
                                     <label className='font-bold' htmlFor="">Full Name</label>

@@ -18,9 +18,10 @@ export const AuthStateChangeProvicer = ({ children }) => {
                 const { result } = await getDocument('user', uid)
                 const { status } = result
                 setUser(result)
-                // if (status === -1) {
-                //     router.replace('/auth/getting-started');
-                // }
+                
+                if (status === -1) {
+                    router.replace('/auth/getting-started');
+                }
             } else {
                 console.log("user not authenticated");
                 setUser(InitialUserState)

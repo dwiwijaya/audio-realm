@@ -1,7 +1,5 @@
-import Container from '@/components/layout/Container'
 import GetStartedForm from '@/components/view/auth/GetStartedForm'
-import WithProtected from '@/hoc/withProtected'
-import React from 'react'
+import WithSignupCompletion from '@/hoc/withSignupCompletion'
 
 const getStarted = () => {
   return (
@@ -9,4 +7,4 @@ const getStarted = () => {
   )
 }
 
-export default WithProtected(getStarted)
+export default WithSignupCompletion(getStarted)
