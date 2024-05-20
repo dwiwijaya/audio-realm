@@ -2,7 +2,7 @@ export const TERM_CATEGORIES = [
     {
         key: 'equipment',
         title: 'Equipment',
-        description: 'Terms related to the various equipment and devices used in the audiophiles',
+        description: 'Terms related to various equipment or devices used in audio setups',
     },
     {
         key: 'sound-quality',
