@@ -14,12 +14,12 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <UserProvider>
-        <AuthStateChangeProvicer></AuthStateChangeProvicer>
-        <main className={`${nunito.className} group/main lg:ml-[80px]  ml-0`}>
-          <Overlay />
-          <Component {...pageProps} />
-        </main>
-        <AuthStateChangeProvicer />
+        <AuthStateChangeProvicer>
+          <main className={`${nunito.className} group/main lg:ml-[80px]  ml-0`}>
+            <Overlay />
+            <Component {...pageProps} />
+          </main>
+        </AuthStateChangeProvicer>
       </UserProvider>
     </ThemeProvider>
   );
