@@ -103,7 +103,7 @@ const GetStartedForm = () => {
                                 </div>
                             </div>
                             <div className="flex gap-2 justify-center">
-                                <button className='mt-8 btn bg-secondary !w-fit !rounded-xl ' type='submit'>Continue</button>
+                                <button disabled={usernameErr && true} className={`mt-8 btn bg-secondary !w-fit !rounded-xl  ${usernameErr ? 'cursor-not-allowed' : ''}`} type='submit'>Continue</button>
                             </div>
                         </>
                         :
