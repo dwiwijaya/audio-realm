@@ -51,8 +51,8 @@ const Blog = ({
                     />
                     {
                         review_mode == 0 ?
-                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-medal"></i>Friendly Review</div> :
-                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-rocket"></i>Advanced Review</div>
+                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-leaf"></i>Friendly Review</div> :
+                            <div className='z-10 !border-none shadow-slate-50 badge !text-base !rounded-t-none absolute top-0 left-5 bg-secondary flex items-center gap-1'><i className="bx bx-crown"></i>Advanced Review</div>
                     }
                     <div className='absolute inset-0 bg-gradient-to-b from-black/20 to-black opacity-90 transition-opacity duration-300'></div>
                 </div>
