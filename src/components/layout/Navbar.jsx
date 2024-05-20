@@ -9,6 +9,7 @@ import { useUser } from '@/context/user';
 
 const Navbar = () => {
     const user = useUser();
+    const {uid} = user
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
@@ -36,7 +37,7 @@ const Navbar = () => {
                     <button className='border rounded-md border-stroke p-3 flex items-center justify-center' onClick={toggleTheme}>
                         <i className={`group-active:rotate-90 transition-3s bx bx-${theme == 'dark' ? 'moon' : 'sun'}`} />
                     </button>
-                    {!user ? <Link href="auth/signin" className="btn text-title hover:text-gray-300">Login</Link> : <SignoutToggle/>}
+                    {!uid ? <Link href="auth/signin" className="btn text-title ">Login</Link> : <SignoutToggle/>}
                 </div>
             </div>
         </nav>
