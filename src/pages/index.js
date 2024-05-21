@@ -19,11 +19,8 @@ const Home = () => {
       <Navbar/>
       <HomeEvent/>
       <HomeDictionary/>
-      <hr className="hr"/>
       <HomeRecomendation/>
-      <hr className="hr"/>
       <HomeBlog/>
-      <hr className="hr"/>
       <HomeCommunity/>
     </Container>
   );
